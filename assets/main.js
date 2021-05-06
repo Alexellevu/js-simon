@@ -1,8 +1,3 @@
-
-
-
-
-
 //Un alert() espone 5 numeri generati casualmente.
 
 function getrandom(min, max){
@@ -29,7 +24,7 @@ alert(numeriRandom);
             numeriUtente.push(prompt('inserisci uno per volta i numeri visualizzati in precedenza'));
             var counter =0;
             var numIndovinati = [];
-            if(numeriUtente.includes(numeriRandom)){
+            if(numeriUtente.includes(numeriRandom[j])){
                 counter++;
                 numIndovinati.push(numeriUtente[j]);
             }
