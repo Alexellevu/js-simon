@@ -34,7 +34,15 @@ alert('memorizza i seguenti numeri ' + numeriRandom);
             console.log(numeriUtente);  */      
         }
            
-            alert('hai indovinato ' + numIndovinati.length + ' numeri, ovvero:  ' + numIndovinati); 
+           
+            if(numIndovinati.length == 5){
+                document.getElementById('numeri').innerHTML = 'CONGRATULAZIONI!! hai ricordato tutti i numeri: ' + numIndovinati;
+            }else{
+
+            document.getElementById('punteggio').innerHTML = 'il tuo punteggio è: ' + numIndovinati.length;
+
+            document.getElementById('numeri').innerHTML = 'i numeri che hai ricordato sono: ' + numIndovinati;
+            }
     }  
         
 
